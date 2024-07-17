@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Usage:
+#
+#   $ ./pristine-run -e 'puts Time.now'
+#   2024-07-17 16:13:41 +0000
+#
+
+cd ../pristine
+wasmtime run ruby.wasm "$@"

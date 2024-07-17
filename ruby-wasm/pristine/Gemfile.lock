@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ruby_wasm (2.6.2-arm64-darwin)
+
+PLATFORMS
+  arm64-darwin
+
+DEPENDENCIES
+  ruby_wasm
+
+BUNDLED WITH
+   2.5.14
