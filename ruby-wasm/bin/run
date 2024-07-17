@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Usage:
+#
+#   $ ./run pristine -e 'puts Time.now'
+#   2024-07-17 16:13:41 +0000
+#
+
+if [ $# -lt 1 ]; then
+    echo "Usage: $0 <directory> [ruby.wasm_arguments...]"
+    exit 1
+fi
+
+cd "$1"
+shift
+wasmtime run ruby.wasm "$@"
