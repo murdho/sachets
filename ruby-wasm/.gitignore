@@ -1,3 +1,4 @@
 *.wasm
-build
 rubies
+build
+!bin/build
